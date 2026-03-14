@@ -5,12 +5,12 @@
 ## 📅 2026年3月の記録
 ### 3月14日
 - **【やったこと】**</br>
-  1,Udemy JS講座 `filter`,`some`,`every`,`reduce`
-  2,Udemy JS講座 `デフォルトパラメーター`，`スプレッド構文`，`レスト構文`，`分割代入`
-  3,Udemy JS講座 `DOM入門`,`getElementById',querySelector`,`innerHTML`,`textCountent`
+  1,Udemy JS講座 `filter`,`some`,`every`,`reduce`</br>
+  2,Udemy JS講座 `デフォルトパラメーター`，`スプレッド構文`，`レスト構文`，`分割代入`</br>
+  3,Udemy JS講座 `DOM入門`,`getElementById',querySelector`,`innerHTML`,`textCountent`</br>
 - **【学んだこと】**</br>
-  1,Cで基本的なアルゴリズムが分かっていたので，難なく書くことができた
-  2,今日はたくさん講座を見たが，覚えきれてはいないので重要な部分は，AIと復習をするようにする
+  1,Cで基本的なアルゴリズムが分かっていたので，難なく書くことができた</br>
+  2,今日はたくさん講座を見たが，覚えきれてはいないので重要な部分は，AIと復習をするようにする</br>
 
 ### 3月13日
 - **【やったこと】**</br>
