@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <title>卓球得点管理</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            卓球得点表
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <div>
+                                <h1 class="title is-1">
+                                    <span id="player1-score">0</span>
+                                    対
+                                    <span id="player2-score">0</span>
+                                </h1>
+                            </div>
+                            <p>下のボタンを押して得点を管理しよう</p>
+
+                            <label for="select-game-point" class="label is-large is-inline">何点先取？</label>
+                            <div class="select is-rounded">
+                                <select id="select-game-point">
+                                    <option value="1">1点</option>
+                                    <option value="3">3点</option>
+                                    <option value="5">5点</option>
+                                    <option value="7">7点</option>
+                                    <option value="11">11点</option>
+                                    <option value="13">13点</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <div class="buttons">
+                            <button id="player1-button" class="is-primary button card-footer-item">＋１ プレイヤー１</button>
+                            <button id="player2-button" class="is-info button card-footer-item">＋１ プレイヤー２</button>
+                            <button id="reset-button" class="is-danger button card-footer-item">リセット</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
