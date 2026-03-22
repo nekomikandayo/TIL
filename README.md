@@ -87,7 +87,7 @@ AIをとの壁打ちをから、非同期処理の基礎を終えたタイミン
 4, Udemy JS講座 演習問題 フォームイベント（買い物リスト作成）</br>
 5, Udemy JS講座 演習問題 inputイベント（リアルタイムUI更新）</br>
 6, 卓球得点管理アプリのゼロからの実装（状態管理とDOM操作の総合演習）</br>
-https://github.com/nekomikandayo/TIL/tree/main/WebDevelopmentBootcamp/projects/ScoreSheet </br>
+https://github.com/nekomikandayo/TIL/WebDevelopmentBootcamp/projects/ScoreSheet </br>
 7, AIとの壁打ちを通じたデバッグ、コードの仕組み化（リファクタリング）、およびREADME作成</br>
 
 【学んだこと】</br>
