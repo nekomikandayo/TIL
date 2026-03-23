@@ -12,12 +12,12 @@ Udemy クリーンコード講座：`クラス`の学習開始<br>
 
 【学んだこと・気づき】<br>
 早期returnを使うことで，if-elseのelse部分を初めに書くことで，ネストが深くならないことが分かった<br>
-## bad.js<br>
+# bad.js<br>
 if(member.name) {<br>
   if(member.age){~~<br>
 }<br>
 else console.log("名前が入力されていません");<br>
-## good.js<br>
+# good.js<br>
 if(!(member.name)){<br>
   console.log("名前が入力されていません");<br>
   return false;<br>
