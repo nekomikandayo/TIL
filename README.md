@@ -3,6 +3,37 @@
 AIに丸投げを卒業し，コードをちゃんと理解，修正できるレベルになるための記録
 
 ## 📅 2026年3月の記録
+### 3月24日
+【やったこと】<br>
+Udemy クリーンコード講座：`クラスの内部の情報はできる限り隠ぺいする`の学習<br>
+Udemy クリーンコード講座：`継承かコンポジションか`の学習<br>
+
+【学んだこと・気づき】<br>
+クラスの情報を隠蔽するというのは，初めて知りました<br>
+＃を使って中のメソッドからのみアクセス可能にできるというのも，今まで触れたことがなく理解に時間がかかった<br>
+継承（is-a)かコンポジション(has-a)は，大学の講義で習っていたので簡単に理解できた。<br>
+継承<br>
+class Animal{<br>
+  eat(){~}<br>
+}<br>
+class Dog extends animal {<br>
+  sleep(){~}<br>
+}<br>
+
+コンポジション<br>
+class Television {<br>
+  #power = false;<br>
+  #switch = new Switch();<br>
+  
+  toggleSwitch(){~}<br>
+}<br>
+
+class Switch {<br>
+  toggle(power) return !power;<br>
+}<br>
+  
+
+
 ### 3月23日
 【やったこと】<br>
 Udemy クリーンコード講座：`switch文よりオブジェクトを利用する`の学習<br>
