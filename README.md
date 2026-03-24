@@ -14,10 +14,10 @@ Udemy クリーンコード講座：`継承かコンポジションか`の学習
 継承（is-a)かコンポジション(has-a)は，大学の講義で習っていたので簡単に理解できた。<br>
 継承<br>
 class Animal{<br>
-  eat(){~}<br>
+  eat(){/* 処理 */}<br>
 }<br>
 class Dog extends animal {<br>
-  sleep(){~}<br>
+  sleep(){/* 処理 */}<br>
 }<br>
 
 コンポジション<br>
@@ -25,7 +25,7 @@ class Television {<br>
   #power = false;<br>
   #switch = new Switch();<br>
   
-  toggleSwitch(){~}<br>
+  toggleSwitch(){/* 処理 */}<br>
 }<br>
 
 class Switch {<br>
@@ -45,7 +45,7 @@ Udemy クリーンコード講座：`クラス`の学習開始<br>
 早期returnを使うことで，if-elseのelse部分を初めに書くことで，ネストが深くならないことが分かった<br>
 #### bad.js<br>
 if(member.name) {<br>
-  if(member.age){~~<br>
+  if(member.age){/* 処理 */<br>
 }<br>
 else console.log("名前が入力されていません");<br>
 #### good.js<br>
