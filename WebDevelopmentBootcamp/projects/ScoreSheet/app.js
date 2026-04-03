@@ -7,25 +7,36 @@ const stats = {
 
 const p1Button = document.querySelector('#player1-button');
 const p2Button = document.querySelector('#player2-button');
+const p1Score = document.querySelector('#player1-score');
+const p2Score = document.querySelector('#player2-score');
 const resetButton = document.querySelector('#reset-button');
 const selectGamePoint = document.querySelector('#select-game-point');
 const updateScoreBoard = () => {
-    document.querySelector('#player1-score').innerText = stats.p1;
-    document.querySelector('#player2-score').innerText = stats.p2;
+    p1Score.innerText = stats.p1;
+    p2Score.innerText = stats.p2;
 }
 
 
 const checkWin = () => {
-    if(stats.p1 >= stats.gamePoint){
-        document.querySelector('#player1-score').classList.add('winner');
-        document.querySelector('#player2-score').classList.add('loser');
-        stats.finished = true;
-    }else if(stats.p2 >= stats.gamePoint){
-        document.querySelector('#player2-score').classList.add('winner');
-        document.querySelector('#player1-score').classList.add('loser');
-        stats.finished = true;
+    if(!isGameOver()) return;
+
+    if (stats.p1 >= stats.gamePoint) {
+        applyEndGameStyles(p1Score, p2Score);
+    } else {
+        applyEndGameStyles(p2Score, p1Score);
     }
 }
+
+const isGameOver = () => {
+    return stats.p1 >= stats.gamePoint || stats.p2 >= stats.gamePoint;
+}
+
+const applyEndGameStyles = (winner, loser) => {
+    winner.classList.add('winner');
+    loser.classList.add('loser');
+    stats.finished = true;
+};
+
 
 const resetGame = () => {
     stats.p1 = 0;
@@ -38,21 +49,16 @@ const resetGame = () => {
     updateScoreBoard();
 }
 
-p1Button.addEventListener('click', () => {
+const handleScoreUpdate = (playerKey) => {
     if (!stats.finished) {
-        stats.p1++;
+        stats[playerKey]++;
         updateScoreBoard();
         checkWin();
     }
-});
+};
 
-p2Button.addEventListener('click', () => {
-    if (!stats.finished) {
-        stats.p2++;
-        updateScoreBoard();
-        checkWin();
-    }
-});
+p1Button.addEventListener('click', () => handleScoreUpdate('p1'));
+p2Button.addEventListener('click', () => handleScoreUpdate('p2'));
 
 resetButton.addEventListener('click', () => {
     resetGame();
