@@ -17,6 +17,32 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年4月の記録
+### 4月3日
+【やったこと】<br>
+Udemy JS講座：`XHR`の学習</br>
+Udemy JS講座：`fetch`の学習</br>
+Udemy JS講座：`Axios`の学習</br>
+Udemy JS講座：`AxiosでHTTPヘッダーを設定`の学習</br>
+
+【一言で言うと】<br>
+XHRは最近は使われておらないが，モダンなfetch,Axiosの基本となる<br>
+fetchは，returnでjsonを毎回返さなければいけない<br>
+Axiosは，それだけでjsonを返してくれるので現代でもっとも使われる<br>
+
+【コード】<br>
+const getStarWarsPerson = async (id) => {<br>
+    try {<br>
+        const res = await axios.get(`https://swapi.dev/api/people/${id}/`);<br>
+        console.log(res.data);<br>
+    } catch (e) {<br>
+        console.log('ERROR', e)<br>
+    }<br>
+}<br>
+
+【学び・Why】<br>
+Axiosを使うことで，try,catchによりerrorを知らせることもできる<br>
+自動でJsonになるので，記述量が減る<br>
+
 ### 4月2日
 【やったこと】<br>
 Udemy JS講座：`HTTP`の学習</br>
