@@ -17,11 +17,33 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年4月の記録
+### 4月10日
+【やったこと】<br>
+Udemy JS講座：`モジュールとNPM`の学習開始</br>
+Udemy JS講座：`module.exports`の学習</br>
+
+【コード】<br>
+app.js<br>
+const {PI, square, add} = require('./math');<br>
+console.log(add(PI, 10));<br>
+console.log(square(9));<br>
+math.js<br>
+const add = (x, y) => x + y;<br>
+const PI = 3.14159;<br>
+const square = x => x * x;<br>
+export {add, PI, square};<br>
+
+【学び・Why】<br>
+jsのファイルごとに，処理を分割して書くことができる．
+exportのみにして，exportに値にストリングを入れるとエラーが起こる．
+
+
 ### 4月9日
 【やったこと】<br>
 Udemy JS講座：`Node.jsのインストール`の学習</br>
 Udemy JS講座：`Node.jsでファイルを実行`の学習</br>
 Udemy JS講座：`fsモジュール`の学習</br>
+Udemy JS講座：`Node.js入門`の学習終了</br>
 
 【コード】<br>
 const fs = require('fs');</br>
