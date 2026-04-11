@@ -17,6 +17,25 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年4月の記録
+### 4月11日
+【やったこと】<br>
+Udemy JS講座：`ディレクトリをrequire`の学習</br>
+Udemy JS講座：`npm入門`の学習</br>
+Udemy JS講座：`パッケージのインストール`の学習</br>
+
+【コード】<br>
+npmでパッケージをダウンロード後<br>
+const jokes = require('give-me-a-joke');<br>
+const colors = require('colors');<br>
+
+jokes.getRandomDadJoke((joke) => {<br>
+    console.log(joke.rainbow);<br>
+});<br>
+
+【学び・Why】<br>
+npmのパッケージには，さまざまな種類があり，インストールすると記録するフォルダーなどが生成される．それをrequireで入れると，すぐに使うことができる<br>
+自分１人で，すべてを作ることなく既存のライブラリを使うことで，作業を高速化できる．<br>
+
 ### 4月10日
 【やったこと】<br>
 Udemy JS講座：`モジュールとNPM`の学習開始</br>
