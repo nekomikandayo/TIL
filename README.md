@@ -17,6 +17,31 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年4月の記録
+### 4月12日
+【やったこと】<br>
+Udemy JS講座：`package.json`の学習</br>
+Udemy JS講座：`依存パッケージをインストール`の学習</br>
+Udemy JS講座：`言語識別アプリを作ってみる`の学習</br>
+Udemy JS講座：`モジュールとNPM`の学習終了</br>
+
+【コード】<br>
+const franc = require('franc');</br>
+let langs = require('langs');</br>
+
+const input = process.argv.slice(2).join(' ');</br>
+
+const langCode = franc(input);</br>
+if (langCode === 'und') {</br>
+    console.log('解析できないです！もっと多くのテキストを入力してください！');</br>
+} else {</br>
+    const language = langs.where('3', langCode);</br>
+    console.log(`${language.name} です！`);</br>
+}</br>
+
+【学び・Why】<br>
+githubなどには，node_modulesは上げずに，コードをダウンロードした後に，git installをすることで，使われているモジュールをダウンロードすることができる</br>
+一般に出ているモジュールを使うことで，自分１人で作るより簡単に制作することができる</br>
+
 ### 4月11日
 【やったこと】<br>
 Udemy JS講座：`ディレクトリをrequire`の学習</br>
