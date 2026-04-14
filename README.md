@@ -17,11 +17,30 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年4月の記録
+### 4月14日
+【やったこと】<br>
+Udemy JS講座：`ルーティンの基本`の学習<br>
+Udemy JS講座：`パスパラメータ`の学習<br>
+
+【コード】<br>
+app.get('/', (req, res) =>{<br>
+    res.send('This is the home page');<br>
+});<br>
+
+app.get('/r/:subreddit/:postId', (req, res) =>{<br>
+    const {subreddit, postId} = req.params;<br>
+    res.send(`<h1>Browsing the ${subreddit} subreddit</h1><h2>Viewing post ID: ${postId}</h2>`);<br>
+});<br>
+
+【学び・Why】<br>
+ルーティングとは、ユーザがアクセスするURLによって，サーバ側で何を実行するか変えること<br>
+パスパラメータを使うことによって，URLの値を使うことができる<br>
+
 ### 4月13日
 【やったこと】<br>
 Udemy JS講座：`Express入門`の学習開始<br>
 Udemy JS講座：`初めてのExpressアプリ`の学習<br>
-Udemy JS講座：`初めてのExpressアプリ`の学習<br>
+Udemy JS講座：`リクエストとレスポンスオブジェクト`の学習<br>
 
 【コード】<br>
 const express = require('express');<br>
