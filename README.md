@@ -17,6 +17,27 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 ****
 
 ## 📅 2026年4月の記録
+### 4月15日
+【やったこと】<br>
+Udemy JS講座：`クエリストリングを使ってみる`の学習<br>
+Udemy JS講座：`Nodemonで自動再起動`の学習<br>
+Udemy JS講座：`Express`の学習終了<br>
+
+【コード】<br>
+app.get('/search', (req, res) =>{<br>
+    const {q} = req.query;<br>
+    if (!q) {<br>
+        res.send('Nothing found if nothing searched');<br>
+    } else {<br>
+        res.send(`<h1>Search results for: ${q}</h1>`);<br>
+    }<br>
+});<br>
+
+【学び・Why】<br>
+クエリストリングを使うことで，検索結果を表示することができるようになった．<br>
+パスパラメータは，.paeamsを使ったが，クエリストリングは queryを使うことが分かった<br>
+nodemonを使うことで，変更が瞬時に読み込まれ自分で再起動しなくて済むので効率がよい<br>
+
 ### 4月14日
 【やったこと】<br>
 Udemy JS講座：`ルーティンの基本`の学習<br>
