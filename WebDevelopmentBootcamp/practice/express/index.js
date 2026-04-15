@@ -29,6 +29,15 @@ app.get('/r/:subreddit/:postId', (req, res) =>{
     res.send(`<h1>Browsing the ${subreddit} subreddit</h1><h2>Viewing post ID: ${postId}</h2>`);
 });
 
+app.get('/search', (req, res) =>{
+    const {q} = req.query;
+    if (!q) {
+        res.send('Nothing found if nothing searched');
+    } else {
+        res.send(`<h1>Search results for: ${q}</h1>`);
+    }
+});
+
 app.use((req, res) =>{
     res.status(404).send('Not Found');
 });
