@@ -16,7 +16,33 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 
 ****
 
+
+
 ## 📅 2026年4月の記録
+### 4月17日
+【やったこと】<br>
+Udemy JS講座：`テンプレートを使った動的なHTML`の学習開始<br>
+Udemy JS講座：`テンプレート入門`の学習<br>
+Udemy JS講座：`ExpressでEJSを設定`の学習<br>
+Udemy JS講座：`viewsディレクトリの設定`の学習<br>
+
+【コード】<br>
+const path = require('path');<br>
+const express = require('express');<br>
+const app = express();<br>
+
+app.set('views', path.join(__dirname, 'views'));<br>
+app.set('view engine', 'ejs');<br>
+
+app.get('/', (req, res) => {<br>
+    res.render('home');<br>
+});<br>
+
+【学び・Why】<br>
+画面遷移のたび、HTMLで新しい画面に行くのは効率が悪いので、テンプレートを使って、繰り返し使える所を穴埋め方式で使うのがよい<br>
+
+
+
 ### 4月15日
 【やったこと】<br>
 Udemy JS講座：`クエリストリングを使ってみる`の学習<br>
