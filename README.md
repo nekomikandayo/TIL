@@ -19,6 +19,26 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 
 
 ## 📅 2026年4月の記録
+### 4月18日
+【やったこと】<br>
+Udemy JS講座：`ejsの構文`の学習<br>
+Udemy JS講座：`テンプレートにデータを渡す`の学習<br>
+
+【コード】<br>
+random.ejs<br>
+<!-- <h1>ランダムな値：<%= rand %> </h1> --><br>
+
+index.js<br>
+app.get('/rand', (req, res) => {<br>
+    const num = Math.floor(Math.random() * 10) + 1;<br>
+    res.render('random', {rand:num});<br>
+});<br>
+
+【学び・Why】<br>
+ejsを使うことで，htmlのテンプレートにデータを上げることができた．<br>
+これにより，HTMLが読みやすくなる，データを入れ替えがやりやすくなるなどよい点がある<br>
+
+
 ### 4月17日
 【やったこと】<br>
 Udemy JS講座：`テンプレートを使った動的なHTML`の学習開始<br>
