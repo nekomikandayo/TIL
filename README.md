@@ -26,7 +26,9 @@ Udemy JS講座：`テンプレートにデータを渡す`の学習<br>
 
 【コード】<br>
 random.ejs<br>
-<!-- <h1>ランダムな値：<%= rand %> </h1> --><br>
+```ejs
+<h1>ランダムな値：<%= rand %></h1>
+```
 
 index.js<br>
 app.get('/rand', (req, res) => {<br>
