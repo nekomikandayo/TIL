@@ -19,9 +19,27 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 
 
 ## 📅 2026年4月の記録
+### 〇月〇日
+【やったこと】<br>
+Udemy JS講座：`ejsでループ`の学習<br>
+
+【コード】<br>
+```
+<h1>All Cats</h1>
+    <ul>
+        <% for(let cat of cats) { %>
+            <li><%= cat %></li>
+        <% } %>
+    </ul>
+```
+
+【学び・Why】<br>
+forofで回すことで，catのオブジェクトをその数だけ表示することができる<br>
+
+
 ### 4月19日
 【やったこと】<br>
-Udemy JS講座：`subreddit菜テンプレートデモ`の学習<br>
+Udemy JS講座：`subredditなテンプレートデモ`の学習<br>
 Udemy JS講座：`ejsで条件文`の学習<br>
 
 【コード】<br>
