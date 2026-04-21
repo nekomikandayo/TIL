@@ -19,6 +19,38 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 
 
 ## 📅 2026年4月の記録
+### 4月21日
+【やったこと】<br>
+Udemy JS講座：`続subredditなテンプレートデモ`の学習<br>
+
+【コード】<br>
+```
+index.js
+app.get('/r/:subreddit', (req, res) => {
+    const {subreddit} = req.params;
+    const data = redditData[subreddit];
+    if (!data) {
+        res.render('notfound', {subreddit});
+    }else{
+        res.render('subreddit', {...data});
+    }
+});
+subreddit.ejs
+<% for(let post of posts) { %>
+        <article>
+            <h3><%= post.title %></h3>
+            <p><%= post.author %></p>
+            <% if (post.img) { %>
+                <img src="<%= post.img %>" alt="<%= post.title %>">
+            <% } %>
+        </article>
+    <% } %>
+```
+
+【学び・Why】<br>
+URLから読み取った値によって，出すデータを変える方法を学んだ．<br>
+これによって，検索技術がどのようになっているか簡単にだが学ぶことができた．<br>
+
 ### 4月20日
 【やったこと】<br>
 Udemy JS講座：`ejsでループ`の学習<br>
