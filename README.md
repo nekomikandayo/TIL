@@ -19,6 +19,20 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 
 
 ## 📅 2026年4月の記録
+### 4月22日
+【やったこと】<br>
+Udemy JS講座：`Expressで静的ファイルを提供`の学習<br>
+
+【コード】<br>
+```
+app.use(express.static(path.join(__dirname, 'public')));
+
+```
+
+【学び・Why】<br>
+テンプレートでHTMLのみではなく，cssを読み込む方法を学んだ<br>
+動的な処理はExpressで，静的なファイルはpublicにすること<br>
+
 ### 4月21日
 【やったこと】<br>
 Udemy JS講座：`続subredditなテンプレートデモ`の学習<br>
