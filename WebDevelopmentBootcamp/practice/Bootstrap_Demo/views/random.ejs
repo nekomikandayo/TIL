@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('./partials/header') %>
+
+    <%- include('partials/navbar', { root: './views' }) %>
     <h1>ランダムな値：<%= rand %> </h1>
     <% if (rand % 2 === 0) { %>
         <h2>偶数</h2>
@@ -13,6 +8,5 @@
         <h2>奇数</h2>
     <% } %>
 
-    <h3><%= num % 2 === 0 ? '偶数' : '奇数' %></h3>
-</body>
-</html>
+    <h3><%= rand % 2 === 0 ? '偶数' : '奇数' %></h3>
+    <%- include('partials/footer', { root: './views' }) %>

@@ -19,6 +19,24 @@ AIに丸投げを卒業し，コードをちゃんと理解，修正できるレ
 
 
 ## 📅 2026年4月の記録
+### 4月23日
+【やったこと】<br>
+Udemy JS講座：`ExpressでBootstrap`の学習<br>
+Udemy JS講座：`ejsとパーシャル`の学習<br>
+Udemy JS講座：`テンプレートを使った動的なHTML`の学習終了<br>
+
+【コード】<br>
+```
+<%- include('partials/header', { root: './views' }) %>
+
+    <%- include('partials/navbar', { root: './views' }) %>
+
+```
+
+【学び・Why】<br>
+ejsでheaderを作り，そこにcss,jquery,jsを読み込むことで，初めに同じことを書く手間を省いている<br>
+また，header意外にもnavber,footerを作ることで，再利用できる．これによりDRYなコードを書くことができる<br>
+
 ### 4月22日
 【やったこと】<br>
 Udemy JS講座：`Expressで静的ファイルを提供`の学習<br>

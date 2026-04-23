@@ -9,24 +9,33 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('home');
-});
+    res.render('home', {
+      title: 'ホーム'
+    });
+  });
 
-app.get('/r/:subreddit', (req, res) => {
+  app.get('/r/:subreddit', (req, res) => {
     const {subreddit} = req.params;
     const data = redditData[subreddit];
+
     if (!data) {
         res.render('notfound', {subreddit});
-    }else{
-        res.render('subreddit', {...data});
+    } else {
+        res.render('subreddit', {
+            ...data,
+            randomUrl: '/rand' 
+        });
     }
-    
 });
 
 app.get('/rand', (req, res) => {
     const num = Math.floor(Math.random() * 10) + 1;
-    res.render('random', {rand:num});
-});
+    res.render('random', {
+        rand: num,
+        randomUrl: '/rand'
+      });
+  });
+
 
 app.get('/cats', (req, res) => {
     const cats = [

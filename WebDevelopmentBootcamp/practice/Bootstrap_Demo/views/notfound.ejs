@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Found</title>
-</head>
-<body>
+<%- include('partials/header', { root: './views' }) %>
+
+    <%- include('partials/navbar', { root: './views' }) %>
     <h1>Not Found</h1>
     <p>We couldn't find the <%= subreddit %> subreddit</p>
-</body>
-</html>
+    <%- include('partials/footer', { root: './views' }) %>
